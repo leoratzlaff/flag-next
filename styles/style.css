@@ -13,10 +13,8 @@
   --color-gray-900: #212F3C;
   --color-background: var(--color-gray-100);
   --color-text: var(--color-gray-900);
-  --color-green-400: #76D7C4;
-  --color-green-500: #48C9B0;
-  --color-accent: var(--color-green-500);
-  --color-accent-hover: var(--color-green-400);
+  --color-accent: #009B3A;
+  --color-accent-hover: hsl(142, 100%, 25%);
   --border-radius: 4px;
 }
 
@@ -102,6 +100,10 @@ footer{
 section.editor div {
   grid-column: span 6 ;
 }
+section.editor div {
+  grid-column: span 6 ;
+}
+
 .flag {
   position: relative;
   display: inline-table;
@@ -114,8 +116,8 @@ section.editor div {
 
 .export{
   overflow: hidden;
-  width: 1000px;
-  height: 700px;
+  width: 1080px;
+  height: 756px;
   position: absolute;
   right: 101vw;
 }
@@ -125,4 +127,41 @@ svg text textpath{
   font-size: 19.5px;
   color: #009B3A;
   letter-spacing: -0.03rem;
+}
+
+.editor .controls {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.editor .controls h1{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.editor .controls input[type=text]{
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.5rem;
+  width: 20rem;
+  max-width: 100%;
+  background: rgba(255,255,255,0.5);
+  border: solid 1px var(--color-gray-300);
+}
+.editor .controls button{
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-accent);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  display: inline-flex;
+}
+.editor .controls button:hover{
+  background-color: var(--color-accent-hover);
+}
+.editor .controls .label,
+.editor .controls button{
+  margin-top: 1rem;
 }
