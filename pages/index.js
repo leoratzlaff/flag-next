@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import Header from './Header';
 import Flag from './Flag';
 import RadioButton from './RadioButton';
-import exportAsImage from './utils/exportAsImage';
+import exportAsImage from '../utils/exportAsImage';
 
 function App() {
 
